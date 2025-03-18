@@ -16,7 +16,7 @@ def B_func(A, Z):
         a5 = 12.0
     return a1*A - a2*A**(2/3) - a3*(Z**2)/(A**(1/3)) - a4*((A-2*Z)**2)/A + a5/(A**(1/2))
 
-def Binding_energy_per_nucleon(A, Z):
+def Binding_energy_per_nucleon(A, Z): # MeV
     return B_func(A, Z)/A
 
 def most_stable_A(Z):
